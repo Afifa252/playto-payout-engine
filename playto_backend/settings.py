@@ -23,15 +23,14 @@ DEBUG = False
 
 
 ALLOWED_HOSTS = [
-    "web-production-f8ae8.up.railway.app",
-    ".railway.app",
+    "playto-payout-engine1.onrender.com",
     "localhost",
     "127.0.0.1"
 ]
 CSRF_TRUSTED_ORIGINS = [
     "https://web-production-f8ae8.up.railway.app"
 ]
-
+SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 # ======================
 # APPLICATIONS
 # ======================
