@@ -21,8 +21,16 @@ SECRET_KEY = os.getenv("DJANGO_SECRET_KEY", "fallback-secret-key")
 
 DEBUG = False
 
-ALLOWED_HOSTS = ["*"]
 
+ALLOWED_HOSTS = [
+    "web-production-f8ae8.up.railway.app",
+    ".railway.app",
+    "localhost",
+    "127.0.0.1"
+]
+CSRF_TRUSTED_ORIGINS = [
+    "https://web-production-f8ae8.up.railway.app"
+]
 
 # ======================
 # APPLICATIONS
